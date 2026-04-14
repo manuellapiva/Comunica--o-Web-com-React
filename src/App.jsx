@@ -61,7 +61,26 @@ function App() {
             <p>{erro}</p>
           </>
         )}
-        
+        {dados && !loading && (
+          <>
+            <h3>✅ Dados recebidos :</h3>
+            <div className="card">
+              <div className="over">
+                <img src={dados.sprites.front_default} alt={dados.name}/>
+                <p><strong>Nome : </strong>{dados.name.charAt(0).toUpperCase() + dados.name.slice(1)}</p>
+              </div>
+              <div className="under">
+                <p><strong>Altura : </strong>{dados.height * 10} cm</p>
+                <p><strong>Peso : </strong>{dados.weight / 10} kg</p>
+              </div>
+            </div>
+          </>
+        )}
+
+        {!dados && !loading && !erro && (
+          <em>Clique no botão acima para buscar...</em>
+        )}
+      </div>
       </div>
     );
 }

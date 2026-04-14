@@ -64,3 +64,69 @@ button:disabled {
   background-color: #cccccc;
   cursor: not-allowed;
 }
+
+.resultado {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-left: 4px solid #e99700;
+  border-radius: 4px;
+  min-height: 50px;
+}
+
+.resultado h3 {
+  margin-top: 0;
+}
+
+.resultado p {
+  margin: 10px 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: fit-content; 
+}
+
+.card img {
+  border: 3px solid #b3780c;
+  border-radius: 5px;
+}
+
+.over {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.under {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+input {
+  width: 580px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.titulo img {
+  width: 67px;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 30px;
+}

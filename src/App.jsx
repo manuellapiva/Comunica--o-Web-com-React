@@ -51,6 +51,17 @@ function App() {
       <button onClick={buscarDados} disabled={loading}>
         {loading ? 'Carregando...' : 'Buscar Dados da API'}
       </button>
+
+      <div className="resultado">
+        {loading && <em>⌛ Carregando dados...</em>}
+
+        {erro && (
+          <>
+            <h3>❌ Erro</h3>
+            <p>{erro}</p>
+          </>
+        )}
+        
       </div>
     );
 }

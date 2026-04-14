@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import pokebola from './assets/img/poke_bola.webp'
 
 function App() {
   const [dados, setDados] = useState(null);
@@ -35,7 +36,6 @@ function App() {
       <div className="titulo">
         <img src={`${pokebola}`} alt="" />
         <h1>POKÉDEX PRO</h1>
-        <img src={`${pokebola}`} alt="" />
       </div>
       <div className="info">
         <strong>Conceito : </strong>Cliente (navegador) solicita dados de um Servidor através de requisições HTTP
